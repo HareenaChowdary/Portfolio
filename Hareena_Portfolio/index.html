@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Hareena Chowdary Polavaram</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <img
+              id="modeToggle"
+              class="icon color-icon"
+              src="./assets/theme_light.png"
+              src-light="./assets/theme_light.png"
+              src-dark="./assets/theme_dark.png"
+              alt="Color them icon"
+            />
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Hareena Chowdary Polavaram</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li>
+            <img
+              id="modeToggle2"
+              class="icon color-icon"
+              src="./assets/theme_light.png"
+              src-light="./assets/theme_light.png"
+              src-dark="./assets/theme_dark.png"
+              alt="Color them icon"
+            />
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="profile-pic-container">
+        <img src="./assets/profile-pic.jpg" alt="Hareena profile picture" class="profile-pic" />
+      </div>            
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Hareena Chowdary Polavaram</h1>
+        <p class="section__text__p2">Data Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Hareena_DE.pdf')"
+          >
+            Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin_light.png"
+            src-light="./assets/linkedin_light.png"
+            src-dark="./assets/linkedin_dark.png"
+            alt="My LinkedIn profile"
+            class="icon linkedin-icon"
+            onclick="location.href='https://www.linkedin.com/in/hareena-chowdary-polavaram/'"
+          />
+          <img
+            src="./assets/github_light.png"
+            src-light="./assets/github_light.png"
+            src-dark="./assets/github_dark.png"
+            alt="My github profile"
+            class="icon github-icon"
+            onclick="location.href='https://github.com/HareenaChowdary'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container about-pic-container">
+          <img src="./assets/about-pic.jpg" alt="About picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container" onclick="showExperience()">
+              <img
+                src="./assets/experience_light.png"
+                src-light="./assets/experience_light.png"
+                src-dark="./assets/experience_dark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2 years <br />Data Engineer</p>
+            </div>
+            <div class="details-container" onclick="showEducation()">
+              <img
+                src="./assets/education_light.png"
+                src-light="./assets/education_light.png"
+                src-dark="./assets/education_dark.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech Bachelors Degree<br />M.S. Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I’m a Data Engineer with expertise in big data, cloud technologies, and machine learning. Skilled in Azure, AWS, Apache Spark, Kafka, and ETL pipelines, I specialize in building scalable, high-performance data solutions. With a Master’s in Computer Science and hands-on industry experience, I’m passionate about optimizing data workflows, automating processes, and turning raw data into actionable insights. Let’s connect and build something impactful!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <p class="section_text_p3">Explore My</p>
+      <h1 class="title">Technical Skills</h1>
+      <div class="skills-container">
+        <div class="skill-card">
+          <h2 class="skills-sub-title">Cloud Technologies</h2>
+          <ul>
+            <li>Azure - Experienced</li>
+            <li>AWS - Experienced</li>
+            <li>Databricks - Experienced</li>
+            <li>Apache Spark - Experienced</li>
+            <li>Apache Kafka - Experienced</li>
+          </ul>
+        </div>
+        
+        <div class="skill-card">
+          <h2 class="skills-sub-title">Programming</h2>
+          <ul>
+            <li>Python - Advanced</li>
+            <li>Java - Intermediate</li>
+            <li>Shell Scripting - Intermediate</li>
+            <li>Node.js - Intermediate</li>
+            <li>Git - Experienced</li>
+          </ul>
+        </div>
+        
+        <div class="skill-card">
+          <h2 class="skills-sub-title">Databases</h2>
+          <ul>
+            <li>SQL - Experienced</li>
+            <li>PostgreSQL - Intermediate</li>
+            <li>MongoDB - Intermediate</li>
+            <li>MySQL - Intermediate</li>
+          </ul>
+        </div>
+        
+        <div class="skill-card">
+          <h2 class="skills-sub-title">Data Visualization</h2>
+          <ul>
+            <li>Power BI - Experienced</li>
+            <li>Tableau - Intermediate</li>
+            <li>Grafana - Intermediate</li>
+          </ul>
+        </div>
+        
+        <div class="skill-card">
+          <h2 class="skills-sub-title">Libraries & Tools</h2>
+          <ul>
+            <li>Apache Airflow - Intermediate</li>
+            <li>Pandas - Experienced</li>
+            <li>NumPy - Intermediate</li>
+            <li>Selenium - Intermediate</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="experience-card">
+          <div class="experience-header">
+            <h2 class="experience-sub-title">Data Engineer</h2>
+            <p class="experience-duration">Aug 2021 - Jul 2023</p>
+          </div>
+          <h3 class="experience-company">Tata Consultancy Services, India</h3>
+          <ul class="experience-list">
+            <li>Designed and streamlined ETL workflows in Azure Data Factory (ADF) and Databricks.</li>
+            <li>Optimized data pipelines using PySpark, reducing processing time by 30%.</li>
+            <li>Developed scalable data lakes in Azure Data Lake Storage (ADLS) with 99.9% uptime.</li>
+            <li>Processed large-scale insurance datasets ensuring compliance and accuracy.</li>
+            <li>Built automation frameworks for data validation, improving reliability by 20%.</li>
+            <li>Restructured SQL queries to reduce execution time by 25%.</li>
+            <li>Led transition of legacy data processes to Azure, enhancing scalability and efficiency.</li>
+          </ul>
+        </div>
+      </div>   
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="projects-container">
+    
+        <!-- Formula 1 Data Analytics -->
+        <div class="project-item">
+          <div class="project-header">
+            <h2 class="project-title">Formula 1 Data Analytics</h2>
+            <span class="project-time">Nov 2024 - Dec 2025</span>
+          </div>
+          <div class="project-buttons">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">GitHub</button>
+            <button class="btn btn-description" onclick="toggleDescription(this)">Description</button>
+          </div>
+          <div class="project-description">
+            <ul>
+              <li>Ingested, processed, and transformed real-time Formula 1 race data.</li>
+              <li>Generated insights using Power BI and Databricks, enhancing race strategy analysis.</li>
+            </ul>
+            <div class="tools-container">
+              <p><strong>Tools Used:</strong> Azure Databricks, Delta Lake, Power BI, Azure Data Factory</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Netflix Data Engineering -->
+        <div class="project-item">
+          <div class="project-header">
+            <h2 class="project-title">Netflix Data Engineering</h2>
+            <span class="project-time">Jan 2024 - Oct 2024</span>
+          </div>
+          <div class="project-buttons">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">GitHub</button>
+            <button class="btn btn-description" onclick="toggleDescription(this)">Description</button>
+          </div>
+          <div class="project-description">
+            <ul>
+              <li>Built an end-to-end data pipeline to process Netflix user activity.</li>
+              <li>Optimized storage and analytics using Apache Spark & Azure Data Lake.</li>
+            </ul>
+            <div class="tools-container">
+              <p><strong>Tools Used:</strong> Azure Data Factory, Databricks, PySpark, Apache Spark</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- More projects follow the same structure -->
+        <div class="project-item">
+          <div class="project-header">
+            <h2 class="project-title">Azure End-to-End Data Engineering</h2>
+            <span class="project-time">Jan 2024 - Oct 2024</span>
+          </div>
+          <div class="project-buttons">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">GitHub</button>
+            <button class="btn btn-description" onclick="toggleDescription(this)">Description</button>
+          </div>
+          <div class="project-description">
+            <ul>
+              <li>Built an end-to-end data pipeline to process Netflix user activity.</li>
+              <li>Optimized storage and analytics using Apache Spark & Azure Data Lake.</li>
+            </ul>
+            <div class="tools-container">
+              <p><strong>Tools Used:</strong> Azure Data Factory, Databricks, PySpark, Apache Spark</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <h2 class="project-title">Olympic Data Analysis</h2>
+            <span class="project-time">Jan 2024 - Oct 2024</span>
+          </div>
+          <div class="project-buttons">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">GitHub</button>
+            <button class="btn btn-description" onclick="toggleDescription(this)">Description</button>
+          </div>
+          <div class="project-description">
+            <ul>
+              <li>Built an end-to-end data pipeline to process Netflix user activity.</li>
+              <li>Optimized storage and analytics using Apache Spark & Azure Data Lake.</li>
+            </ul>
+            <div class="tools-container">
+              <p><strong>Tools Used:</strong> Azure Data Factory, Databricks, PySpark, Apache Spark</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <h2 class="project-title">Covid 19 Data Analysis</h2>
+            <span class="project-time">Jan 2024 - Oct 2024</span>
+          </div>
+          <div class="project-buttons">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">GitHub</button>
+            <button class="btn btn-description" onclick="toggleDescription(this)">Description</button>
+          </div>
+          <div class="project-description">
+            <ul>
+              <li>Built an end-to-end data pipeline to process Netflix user activity.</li>
+              <li>Optimized storage and analytics using Apache Spark & Azure Data Lake.</li>
+            </ul>
+            <div class="tools-container">
+              <p><strong>Tools Used:</strong> Azure Data Factory, Databricks, PySpark, Apache Spark</p>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </section>   
+    <section id="education" class="education-container">
+      <p class="section_text_p1">My Academic Journey</p>
+      <h1 class="title">Education</h1>
+    
+      <!-- Masters Degree -->
+      <div class="education-box-container">
+        <div class="university-logo">
+          <img alt="University Logo" src="./assets/wmu.png">
+        </div>
+        <div class="education-details">
+          <h3>Masters in Computer Science</h3>
+          <span>Aug 2023 - Apr 2025</span>
+          <p>Western Michigan University, MI, USA</p>
+        </div>
+        <div class="gpa-container">
+          <div class="gpa-text">3.8</div>        
+        </div>
+      </div>
+    
+      <!-- B.Tech Degree -->
+      <div class="education-box-container">
+        <div class="university-logo">
+          <img alt="University Logo" src="./assets/SVU.png">
+        </div>
+        <div class="education-details">
+          <h3>B.Tech in Computer Science</h3>
+          <span>Jul 2017 - Jul 2021</span>
+          <p>Sri Venkateswara University, Tirupati, India</p>
+        </div>
+        <div class="gpa-container">
+          <div class="gpa-text">3.6</div>        
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email_light.png"
+            src-light="./assets/email_light.png"
+            src-dark="./assets/email_dark.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:hareena.cp@gmail.com">hareena.cp@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin_light.png"
+            src-light="./assets/linkedin_light.png"
+            src-dark="./assets/linkedin_dark.png"
+            alt="My LinkedIn profile"
+            class="icon linkedin-icon"
+            onclick="location.href='https://www.linkedin.com/in/hareena-chowdary-polavaram/'"
+          />
+          <p><a href="https://www.linkedin.com/in/hareena-chowdary-polavaram/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; Hareena Chowdary Polavaram. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
