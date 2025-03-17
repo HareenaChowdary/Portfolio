@@ -146,51 +146,51 @@
         <div class="skill-card">
           <h2 class="skills-sub-title">Cloud Technologies</h2>
           <ul>
-            <li>Azure - Experienced</li>
-            <li>AWS - Experienced</li>
-            <li>Databricks - Experienced</li>
-            <li>Apache Spark - Experienced</li>
-            <li>Apache Kafka - Experienced</li>
+            <li>Azure</li>
+            <li>AWS</li>
+            <li>Databricks</li>
+            <li>Apache Spark</li>
+            <li>Apache Kafka</li>
           </ul>
         </div>
         
         <div class="skill-card">
           <h2 class="skills-sub-title">Programming</h2>
           <ul>
-            <li>Python - Advanced</li>
-            <li>Java - Intermediate</li>
-            <li>Shell Scripting - Intermediate</li>
-            <li>Node.js - Intermediate</li>
-            <li>Git - Experienced</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>Shell Scripting</li>
+            <li>Node.js</li>
+            <li>Git</li>
           </ul>
         </div>
         
         <div class="skill-card">
           <h2 class="skills-sub-title">Databases</h2>
           <ul>
-            <li>SQL - Experienced</li>
-            <li>PostgreSQL - Intermediate</li>
-            <li>MongoDB - Intermediate</li>
-            <li>MySQL - Intermediate</li>
+            <li>SQL</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
           </ul>
         </div>
         
         <div class="skill-card">
           <h2 class="skills-sub-title">Data Visualization</h2>
           <ul>
-            <li>Power BI - Experienced</li>
-            <li>Tableau - Intermediate</li>
-            <li>Grafana - Intermediate</li>
+            <li>Power BI</li>
+            <li>Tableau</li>
+            <li>Grafana</li>
           </ul>
         </div>
         
         <div class="skill-card">
           <h2 class="skills-sub-title">Libraries & Tools</h2>
           <ul>
-            <li>Apache Airflow - Intermediate</li>
-            <li>Pandas - Experienced</li>
-            <li>NumPy - Intermediate</li>
-            <li>Selenium - Intermediate</li>
+            <li>Apache Airflow</li>
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>Selenium</li>
           </ul>
         </div>
       </div>
@@ -206,13 +206,14 @@
           </div>
           <h3 class="experience-company">Tata Consultancy Services, India</h3>
           <ul class="experience-list">
-            <li>Designed and streamlined ETL workflows in Azure Data Factory (ADF) and Databricks.</li>
-            <li>Optimized data pipelines using PySpark, reducing processing time by 30%.</li>
-            <li>Developed scalable data lakes in Azure Data Lake Storage (ADLS) with 99.9% uptime.</li>
-            <li>Processed large-scale insurance datasets ensuring compliance and accuracy.</li>
-            <li>Built automation frameworks for data validation, improving reliability by 20%.</li>
-            <li>Restructured SQL queries to reduce execution time by 25%.</li>
-            <li>Led transition of legacy data processes to Azure, enhancing scalability and efficiency.</li>
+            <li>Designed & streamlined ETL workflows in Azure Data Factory (ADF) and Databricks, improving data movement, transformation, and integration across structured & unstructured sources.</li>
+            <li>Optimized data pipelines using PySpark, reducing processing time by 30% and enhancing model performance with efficient parallel execution.</li>
+            <li>Developed scalable data lakes in Azure Data Lake Storage (ADLS), ensuring 99.9% uptime and cutting storage costs by 15% through optimized partitioning & lifecycle policies.</li>
+            <li>Processed large-scale insurance datasets (claims, medical records, third-party APIs) using PySpark & SQL, ensuring compliance, accuracy, and consistency in critical reporting.</li>
+            <li>Built automation frameworks for data validation, transformation, and enrichment, increasing data reliability by 20% and minimizing manual intervention.</li>
+            <li>Optimized SQL queries, reducing execution time by 25% and cutting report generation time from 10 minutes to under 2 minutes.</li>
+            <li>Led the transition of legacy data processes to Azure, improving scalability, reliability, and operational efficiency, while reducing maintenance efforts by 40%.
+            </li>
           </ul>
         </div>
       </div>   
@@ -222,14 +223,76 @@
       <h1 class="title">Projects</h1>
       <div class="projects-container">
     
-        <!-- Formula 1 Data Analytics -->
+        <!-- Netflix Data Engineering -->
         <div class="project-item">
           <div class="project-header">
-            <h2 class="project-title">Formula 1 Data Analytics</h2>
-            <span class="project-time">Nov 2024 - Dec 2025</span>
+            <h2 class="project-title">Netflix Data Engineering</h2>
+            <span class="project-time">Feb 2025 - Mar 2025</span>
           </div>
           <div class="project-buttons">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">GitHub</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/HareenaChowdary/Netflix-Data-Engineering'">GitHub</button>
+            <button class="btn btn-description" onclick="toggleDescription(this)">Description</button>
+          </div>
+          <div class="project-description">
+            <ul>
+              <li>Engineered a scalable data pipeline to analyze Netflix user behavior, streaming trends, and content performance.</li>
+              <li>Optimized storage and analytics using Apache Spark & Azure Data Lake.</li>
+            </ul>
+            <div class="tools-container">
+              <p><strong>Tools Used:</strong> Azure Data Factory, Databricks, Azure Data Lake, PySpark, SQL</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <h2 class="project-title">Covid19 Data Engineering</h2>
+            <span class="project-time">Jan 2025 - Feb 2025</span>
+          </div>
+          <div class="project-buttons">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/HareenaChowdary/Covid19-Data-Engineering-Project'">GitHub</button>
+            <button class="btn btn-description" onclick="toggleDescription(this)">Description</button>
+          </div>
+          <div class="project-description">
+            <ul>
+              <li>Built a real-time ETL pipeline to process and analyze global COVID-19 cases, deaths, and vaccinations.</li>
+              <li>Developed automated data ingestion and transformation workflows for accurate reporting.</li>
+            </ul>
+            <div class="tools-container">
+              <p><strong>Tools Used:</strong> Azure Data Factory, Databricks, Power BI, PySpark, SQL, Delta Lake</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- More projects follow the same structure -->
+        <div class="project-item">
+          <div class="project-header">
+            <h2 class="project-title">Azure End-to-End Data Engineering</h2>
+            <span class="project-time">Dec 2024 - Jan 2025</span>
+          </div>
+          <div class="project-buttons">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/HareenaChowdary/Azure-End-to-End-Data-Engineering-Project'">GitHub</button>
+            <button class="btn btn-description" onclick="toggleDescription(this)">Description</button>
+          </div>
+          <div class="project-description">
+            <ul>
+              <li>Developed a full-stack data engineering solution on Azure, handling data ingestion, transformation, and visualization.</li>
+              <li>Implemented high-performance ETL workflows, ensuring seamless data processing and reporting.</li>
+            </ul>
+            <div class="tools-container">
+              <p><strong>Tools Used:</strong>  Azure Data Factory, Databricks, Delta Lake, Apache Spark, Power BI, SQL</p>
+            </div>
+          </div>
+        </div>
+
+         <!-- Formula 1 Data Analytics -->
+         <div class="project-item">
+          <div class="project-header">
+            <h2 class="project-title">Formula 1 Data Analytics</h2>
+            <span class="project-time">Nov 2024 - Dec 2024</span>
+          </div>
+          <div class="project-buttons">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/HareenaChowdary/F1-Data-Analytics-with-Azure-Databricks-and-Power-BI'">GitHub</button>
             <button class="btn btn-description" onclick="toggleDescription(this)">Description</button>
           </div>
           <div class="project-description">
@@ -238,89 +301,27 @@
               <li>Generated insights using Power BI and Databricks, enhancing race strategy analysis.</li>
             </ul>
             <div class="tools-container">
-              <p><strong>Tools Used:</strong> Azure Databricks, Delta Lake, Power BI, Azure Data Factory</p>
-            </div>
-          </div>
-        </div>
-    
-        <!-- Netflix Data Engineering -->
-        <div class="project-item">
-          <div class="project-header">
-            <h2 class="project-title">Netflix Data Engineering</h2>
-            <span class="project-time">Jan 2024 - Oct 2024</span>
-          </div>
-          <div class="project-buttons">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">GitHub</button>
-            <button class="btn btn-description" onclick="toggleDescription(this)">Description</button>
-          </div>
-          <div class="project-description">
-            <ul>
-              <li>Built an end-to-end data pipeline to process Netflix user activity.</li>
-              <li>Optimized storage and analytics using Apache Spark & Azure Data Lake.</li>
-            </ul>
-            <div class="tools-container">
-              <p><strong>Tools Used:</strong> Azure Data Factory, Databricks, PySpark, Apache Spark</p>
-            </div>
-          </div>
-        </div>
-    
-        <!-- More projects follow the same structure -->
-        <div class="project-item">
-          <div class="project-header">
-            <h2 class="project-title">Azure End-to-End Data Engineering</h2>
-            <span class="project-time">Jan 2024 - Oct 2024</span>
-          </div>
-          <div class="project-buttons">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">GitHub</button>
-            <button class="btn btn-description" onclick="toggleDescription(this)">Description</button>
-          </div>
-          <div class="project-description">
-            <ul>
-              <li>Built an end-to-end data pipeline to process Netflix user activity.</li>
-              <li>Optimized storage and analytics using Apache Spark & Azure Data Lake.</li>
-            </ul>
-            <div class="tools-container">
-              <p><strong>Tools Used:</strong> Azure Data Factory, Databricks, PySpark, Apache Spark</p>
+              <p><strong>Tools Used:</strong> Azure Databricks, Delta Lake, Power BI, Azure Data Factory, PySpark, SQL</p>
             </div>
           </div>
         </div>
 
         <div class="project-item">
           <div class="project-header">
-            <h2 class="project-title">Olympic Data Analysis</h2>
-            <span class="project-time">Jan 2024 - Oct 2024</span>
+            <h2 class="project-title">Tokyo Olympic Data Analytics</h2>
+            <span class="project-time">Oct 2024 - Nov 2024</span>
           </div>
           <div class="project-buttons">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">GitHub</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/HareenaChowdary/Tokyo-Olympic-Data-Analytics'">GitHub</button>
             <button class="btn btn-description" onclick="toggleDescription(this)">Description</button>
           </div>
           <div class="project-description">
             <ul>
-              <li>Built an end-to-end data pipeline to process Netflix user activity.</li>
-              <li>Optimized storage and analytics using Apache Spark & Azure Data Lake.</li>
+              <li>Designed a data analytics system to track Olympic statistics, athlete performances, and medal standings.</li>
+              <li>Created dynamic Power BI dashboards, offering real-time insights into event results and country rankings.</li>
             </ul>
             <div class="tools-container">
-              <p><strong>Tools Used:</strong> Azure Data Factory, Databricks, PySpark, Apache Spark</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-header">
-            <h2 class="project-title">Covid 19 Data Analysis</h2>
-            <span class="project-time">Jan 2024 - Oct 2024</span>
-          </div>
-          <div class="project-buttons">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">GitHub</button>
-            <button class="btn btn-description" onclick="toggleDescription(this)">Description</button>
-          </div>
-          <div class="project-description">
-            <ul>
-              <li>Built an end-to-end data pipeline to process Netflix user activity.</li>
-              <li>Optimized storage and analytics using Apache Spark & Azure Data Lake.</li>
-            </ul>
-            <div class="tools-container">
-              <p><strong>Tools Used:</strong> Azure Data Factory, Databricks, PySpark, Apache Spark</p>
+              <p><strong>Tools Used:</strong> Azure Data Factory, Databricks, PySpark, SQL, Power BI</p>
             </div>
           </div>
         </div>
