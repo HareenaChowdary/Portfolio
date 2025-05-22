@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./assets/weblogo.ico">
+    <link rel="icon" href="./assets/Web.ico">
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
@@ -148,7 +148,7 @@
         <div class="skill-card">
           <h2 class="skills-sub-title">Cloud Technologies</h2>
           <div class="tags">
-            <span>Azure (Data Factory, Synapse, Databricks, Data Lake, Blob Storage)</span>
+            <span>Azure (Data Factory, Synapse, Databricks, Data Lake, Blob Storage, Events Hub)</span>
             <span>AWS (S3, Redshift, Glue, Lambda)</span>
             <span>Google Cloud (BigQuery, Cloud Storage)</span>
             <span>Apache Airflow</span>
@@ -162,8 +162,8 @@
         <div class="skill-card">
           <h2 class="skills-sub-title">Programming</h2>
           <div class="tags">
-            <span>Python (Pandas, PySpark)</span>
-            <span>SQL</span>
+            <span>Python (PySpark)</span>
+            <span>SQL (SparkSQL)</span>
             <span>R</span>
             <span>T-SQL</span>
             <span>Shell Scripting</span>
@@ -234,31 +234,64 @@
             <span>NLP (Text Processing, Sentiment Analysis, Named Entity Recognition)</span>
           </div>
         </div>
+    
       </div>
-    </section>
-    <section id="experience">
+    </section><section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="experience-card">
-          <div class="experience-header">
+      <div class="experience-container">
+        <div class="experience-tabs">
+          <button class="tab-button" onclick="showExperienceTab('wmu')">Western Michigan University</button>
+          <button class="tab-button active" onclick="showExperienceTab('tcs')">Tata Consultancy Services</button>
+          <button class="tab-button" onclick="showExperienceTab('ni')">National Instrument</button>
+          <button class="tab-button" onclick="showExperienceTab('svu')">Sri Venkateswara University</button>
+        </div>
+        <div class="experience-content">
+          <div class="tab-content" id="wmu">
+            <h2 class="experience-sub-title">Data Operations Assistant</h2>
+            <p class="experience-duration">Sep 2023 - Apr 2025</p>
+            <ul class="experience-list">
+              <li>Analyzed complex institutional datasets using PeopleSoft, supporting data-driven decision-making and continuous process improvement across administrative departments.</li>
+              <li>Improved request fulfillment efficiency by 30% through strategic collaboration with external partners and internal cross-functional teams.</li>
+              <li>Ensured strict compliance with FERPA standards by maintaining high standards of data confidentiality, security, and integrity.</li>
+              <li>Contributed to operational excellence by identifying workflow bottlenecks and implementing data-centric solutions to streamline reporting and administrative processes.</li>
+            </ul>
+          </div>
+          <div class="tab-content active" id="tcs">
             <h2 class="experience-sub-title">Data Engineer</h2>
             <p class="experience-duration">Aug 2021 - Jul 2023</p>
+            <ul class="experience-list">
+              <li>Built and managed over 20 automated data integration workflows using Azure Data Factory and Databricks, significantly lowering manual intervention and accelerating delivery of key business insights.</li>
+              <li>Developed scalable storage frameworks in Azure Data Lake, leveraging intelligent partitioning and tiering to reduce storage expenses by 15%.</li>
+              <li>Handled processing of 500+ million insurance-related records using PySpark and SparkSQL, enhancing data integrity and optimizing resource utilization by 25%.</li>
+              <li>Re-engineered complex legacy SQL queries that powered high-level reporting, slashing execution time from 10 minutes to under 2 minutes.</li>
+              <li>Developed modular components for data validation and enrichment, which improved overall pipeline robustness and minimized redundant processing.</li>
+              <li>Led the shift from legacy infrastructure to Azure Cloud, boosting system reliability and cutting support overhead by 40%.</li>
+              <li>Implemented automated deployment pipelines via Azure DevOps, streamlining release operations and increasing consistency by 35%.</li>
+            </ul>
           </div>
-          <h3 class="experience-company">Tata Consultancy Services, India</h3>
-          <ul class="experience-list">
-            <li>Designed & streamlined ETL workflows in Azure Data Factory (ADF) and Databricks, improving data movement, transformation, and integration across structured & unstructured sources.</li>
-            <li>Optimized data pipelines using PySpark, reducing processing time by 30% and enhancing model performance with efficient parallel execution.</li>
-            <li>Developed scalable data lakes in Azure Data Lake Storage (ADLS), ensuring 99.9% uptime and cutting storage costs by 15% through optimized partitioning & lifecycle policies.</li>
-            <li>Processed large-scale insurance datasets (claims, medical records, third-party APIs) using PySpark & SQL, ensuring compliance, accuracy, and consistency in critical reporting.</li>
-            <li>Built automation frameworks for data validation, transformation, and enrichment, increasing data reliability by 20% and minimizing manual intervention.</li>
-            <li>Optimized SQL queries, reducing execution time by 25% and cutting report generation time from 10 minutes to under 2 minutes.</li>
-            <li>Led the transition of legacy data processes to Azure, improving scalability, reliability, and operational efficiency, while reducing maintenance efforts by 40%.
-            </li>
-          </ul>
+          <div class="tab-content" id="ni">
+            <h2 class="experience-sub-title">AI Intern</h2>
+            <p class="experience-duration">May 2020 – Jun 2020</p>
+            <ul class="experience-list">
+              <li>Designed and deployed machine learning models tailored for predictive maintenance using over 100,000 telemetry data points from industrial IoT sensors, achieving an anomaly detection accuracy exceeding 85%.</li>
+              <li>Integrated edge-computing modules to trigger real-time alerts with response times under two seconds.</li>
+              <li>Boosted model effectiveness by applying feature selection techniques and tuning hyperparameters, which led to an 18% improvement in the F1 score.</li>
+            </ul>
+          </div>
+          <div class="tab-content" id="svu">
+            <h2 class="experience-sub-title">Software Developer & Lab Assistant</h2>
+            <p class="experience-duration">Jun 2019 – Mar 2020</p>
+            <ul class="experience-list">
+              <li>Automated lab setups with Bash and Python scripts, reducing provisioning time by 30%.</li>
+              <li>Built internal web tools using HTML, CSS, SQL, and shell scripting to streamline administrative tasks.</li>
+              <li>Mentored 200+ students in debugging, troubleshooting, and software tool usage across lab environments.</li>        
+            </ul>
+          </div>
         </div>
-      </div>   
+      </div>
     </section>
+    
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -399,7 +432,7 @@
           <p>Sri Venkateswara University, Tirupati, India</p>
         </div>
         <div class="gpa-container">
-          <div class="gpa-text">7.47/10</div>        
+          <div class="gpa-text">3.6/4</div>        
         </div>
       </div>
     </section>
@@ -444,7 +477,7 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; Hareena Chowdary Polavaram. All Rights Reserved.</p>
+      <p>Copyright &#169; Hareena Chowdary Polavaram. All Rights Reserved ❤️.</p>
     </footer>
     <script src="script.js"></script>
   </body>

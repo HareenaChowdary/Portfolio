@@ -83,3 +83,16 @@ function showExperience() {
 function showEducation() {
   window.location.href = "#education";
 }
+
+
+
+function showExperienceTab(id) {
+  const tabs = document.querySelectorAll('.tab-button');
+  const contents = document.querySelectorAll('.tab-content');
+  tabs.forEach(tab => tab.classList.remove('active'));
+  contents.forEach(content => content.classList.remove('active'));
+  document.querySelector(`.tab-button[onclick*="${id}"]`).classList.add('active');
+  document.getElementById(id).classList.add('active');
+}
+
+
