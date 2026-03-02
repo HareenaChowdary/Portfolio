@@ -36,8 +36,11 @@ const btn2 = document.getElementById("modeToggle2");
 const themeIcons = document.querySelectorAll(".icon");
 const currentTheme = localStorage.getItem("theme");
 
-if (currentTheme === "dark") {
-  setDarkMode();
+// If no theme saved, default to dark
+if (currentTheme === "light") {
+  setLightMode();
+} else {
+  setDarkMode(); // Default theme
 }
 
 btn.addEventListener("click", function () {
